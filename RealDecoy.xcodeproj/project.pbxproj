@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C892602D84FE16FE1C2852F /* Pods_RealDecoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C4360B989D4AD9521FB63 /* Pods_RealDecoy.framework */; };
 		B2754E0A24EE905900FDD971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0924EE905900FDD971 /* AppDelegate.swift */; };
 		B2754E0C24EE905900FDD971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0B24EE905900FDD971 /* SceneDelegate.swift */; };
 		B2754E0E24EE905900FDD971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0D24EE905900FDD971 /* ViewController.swift */; };
@@ -14,9 +15,19 @@
 		B2754E1424EE905900FDD971 /* RealDecoy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2754E1224EE905900FDD971 /* RealDecoy.xcdatamodeld */; };
 		B2754E1624EE905A00FDD971 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2754E1524EE905A00FDD971 /* Assets.xcassets */; };
 		B2754E1924EE905A00FDD971 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2754E1724EE905A00FDD971 /* LaunchScreen.storyboard */; };
+		B2754E2224EE923800FDD971 /* ParkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E2124EE923800FDD971 /* ParkServices.swift */; };
+		B2754E2624EEAE8600FDD971 /* parkcardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E2424EEAE8600FDD971 /* parkcardCollectionViewCell.swift */; };
+		B2754E2724EEAE8600FDD971 /* parkcardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2754E2524EEAE8600FDD971 /* parkcardCollectionViewCell.xib */; };
+		B2754E2924EEBD5000FDD971 /* customLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E2824EEBD5000FDD971 /* customLayout.swift */; };
+		B2754E2C24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E2A24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift */; };
+		B2754E2D24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2754E2B24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib */; };
+		B2754E2F24EEC89200FDD971 /* selectedStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E2E24EEC89200FDD971 /* selectedStateViewController.swift */; };
+		B2754E3124EF530800FDD971 /* ParksMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E3024EF530800FDD971 /* ParksMapViewController.swift */; };
+		B2754E3324EF6BE900FDD971 /* SelectedParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E3224EF6BE900FDD971 /* SelectedParkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C7415BDF7EC7B8A32134091 /* Pods-RealDecoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealDecoy.release.xcconfig"; path = "Target Support Files/Pods-RealDecoy/Pods-RealDecoy.release.xcconfig"; sourceTree = "<group>"; };
 		B2754E0624EE905900FDD971 /* RealDecoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealDecoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2754E0924EE905900FDD971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2754E0B24EE905900FDD971 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,17 @@
 		B2754E1524EE905A00FDD971 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2754E1824EE905A00FDD971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2754E1A24EE905A00FDD971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2754E2124EE923800FDD971 /* ParkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkServices.swift; sourceTree = "<group>"; };
+		B2754E2424EEAE8600FDD971 /* parkcardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parkcardCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2754E2524EEAE8600FDD971 /* parkcardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = parkcardCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2754E2824EEBD5000FDD971 /* customLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLayout.swift; sourceTree = "<group>"; };
+		B2754E2A24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkSelectedCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2754E2B24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParkSelectedCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2754E2E24EEC89200FDD971 /* selectedStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedStateViewController.swift; sourceTree = "<group>"; };
+		B2754E3024EF530800FDD971 /* ParksMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksMapViewController.swift; sourceTree = "<group>"; };
+		B2754E3224EF6BE900FDD971 /* SelectedParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedParkViewController.swift; sourceTree = "<group>"; };
+		C15C4360B989D4AD9521FB63 /* Pods_RealDecoy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealDecoy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B0B1A77B5BEDCA04239357 /* Pods-RealDecoy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealDecoy.debug.xcconfig"; path = "Target Support Files/Pods-RealDecoy/Pods-RealDecoy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C892602D84FE16FE1C2852F /* Pods_RealDecoy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D61DD9D7E2AE0C7204D9A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C15C4360B989D4AD9521FB63 /* Pods_RealDecoy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C034AABAB71364838C09FF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0B1A77B5BEDCA04239357 /* Pods-RealDecoy.debug.xcconfig */,
+				0C7415BDF7EC7B8A32134091 /* Pods-RealDecoy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B2754DFD24EE905900FDD971 = {
 			isa = PBXGroup;
 			children = (
 				B2754E0824EE905900FDD971 /* RealDecoy */,
 				B2754E0724EE905900FDD971 /* Products */,
+				9C034AABAB71364838C09FF5 /* Pods */,
+				3D61DD9D7E2AE0C7204D9A03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +100,8 @@
 		B2754E0824EE905900FDD971 /* RealDecoy */ = {
 			isa = PBXGroup;
 			children = (
+				B2754E2324EEAE5E00FDD971 /* customCells */,
+				B2754E2024EE920500FDD971 /* Modules */,
 				B2754E0924EE905900FDD971 /* AppDelegate.swift */,
 				B2754E0B24EE905900FDD971 /* SceneDelegate.swift */,
 				B2754E0D24EE905900FDD971 /* ViewController.swift */,
@@ -66,8 +110,31 @@
 				B2754E1724EE905A00FDD971 /* LaunchScreen.storyboard */,
 				B2754E1A24EE905A00FDD971 /* Info.plist */,
 				B2754E1224EE905900FDD971 /* RealDecoy.xcdatamodeld */,
+				B2754E2E24EEC89200FDD971 /* selectedStateViewController.swift */,
+				B2754E3224EF6BE900FDD971 /* SelectedParkViewController.swift */,
 			);
 			path = RealDecoy;
+			sourceTree = "<group>";
+		};
+		B2754E2024EE920500FDD971 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B2754E2124EE923800FDD971 /* ParkServices.swift */,
+				B2754E3024EF530800FDD971 /* ParksMapViewController.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B2754E2324EEAE5E00FDD971 /* customCells */ = {
+			isa = PBXGroup;
+			children = (
+				B2754E2424EEAE8600FDD971 /* parkcardCollectionViewCell.swift */,
+				B2754E2524EEAE8600FDD971 /* parkcardCollectionViewCell.xib */,
+				B2754E2824EEBD5000FDD971 /* customLayout.swift */,
+				B2754E2A24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift */,
+				B2754E2B24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib */,
+			);
+			path = customCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2754E1D24EE905A00FDD971 /* Build configuration list for PBXNativeTarget "RealDecoy" */;
 			buildPhases = (
+				6378FF9DCD3238E18791D2A3 /* [CP] Check Pods Manifest.lock */,
 				B2754E0224EE905900FDD971 /* Sources */,
 				B2754E0324EE905900FDD971 /* Frameworks */,
 				B2754E0424EE905900FDD971 /* Resources */,
+				DC1C8D437DA0675381A2A56A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,21 +199,72 @@
 			files = (
 				B2754E1924EE905A00FDD971 /* LaunchScreen.storyboard in Resources */,
 				B2754E1624EE905A00FDD971 /* Assets.xcassets in Resources */,
+				B2754E2D24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib in Resources */,
+				B2754E2724EEAE8600FDD971 /* parkcardCollectionViewCell.xib in Resources */,
 				B2754E1124EE905900FDD971 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6378FF9DCD3238E18791D2A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealDecoy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC1C8D437DA0675381A2A56A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealDecoy/Pods-RealDecoy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealDecoy/Pods-RealDecoy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealDecoy/Pods-RealDecoy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2754E0224EE905900FDD971 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2754E2624EEAE8600FDD971 /* parkcardCollectionViewCell.swift in Sources */,
 				B2754E0E24EE905900FDD971 /* ViewController.swift in Sources */,
+				B2754E3324EF6BE900FDD971 /* SelectedParkViewController.swift in Sources */,
+				B2754E2224EE923800FDD971 /* ParkServices.swift in Sources */,
+				B2754E2924EEBD5000FDD971 /* customLayout.swift in Sources */,
 				B2754E0A24EE905900FDD971 /* AppDelegate.swift in Sources */,
+				B2754E2C24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift in Sources */,
 				B2754E1424EE905900FDD971 /* RealDecoy.xcdatamodeld in Sources */,
+				B2754E2F24EEC89200FDD971 /* selectedStateViewController.swift in Sources */,
 				B2754E0C24EE905900FDD971 /* SceneDelegate.swift in Sources */,
+				B2754E3124EF530800FDD971 /* ParksMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +406,13 @@
 		};
 		B2754E1E24EE905A00FDD971 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B0B1A77B5BEDCA04239357 /* Pods-RealDecoy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YVG3V79M76;
 				INFOPLIST_FILE = RealDecoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +426,13 @@
 		};
 		B2754E1F24EE905A00FDD971 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7415BDF7EC7B8A32134091 /* Pods-RealDecoy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YVG3V79M76;
 				INFOPLIST_FILE = RealDecoy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
