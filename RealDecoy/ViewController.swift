@@ -9,15 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-   
-    
-    
-    
 
-   
-    
-    let parkcollectionViewIdentifier = "parks"
-    let layout = CustomLayout()
+    //Mark: Variables
+    let parkcollectionViewIdentifier = "parks" // collection view identifer
+    let layout = CustomLayout() // collection view layout
     
     
     var parkcollectionView : UICollectionView = {
@@ -33,33 +28,32 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cofiguration()
-        setUpConstriants()
-        // Do any additional setup after loading the view.
+        cofiguration() //view configuration
+        collectionViewConfig() // collectionView configurations
+        setUpConstriants() // view constraints
+    
     }
     func cofiguration(){
-        
-        
-        parkcollectionView.setCollectionViewLayout(layout, animated: true)
-        if let layout = parkcollectionView.collectionViewLayout as? CustomLayout{
-            parkcollectionView.delegate = self
-        }
         view.addSubview(parkcollectionView)
+    }
+    
+    func collectionViewConfig(){
+        parkcollectionView.setCollectionViewLayout(layout, animated: true)
+     
         
         //register custom xib file  for parkcollectionView
         let nib = UINib(nibName: "parkcardCollectionViewCell",bundle: nil)
         self.parkcollectionView.register(nib, forCellWithReuseIdentifier: parkcollectionViewIdentifier)
         parkcollectionView.contentInset = UIEdgeInsets(top: 23, left: 16, bottom: 10, right: 16)
         parkcollectionView.dataSource = self
+        parkcollectionView.delegate = self
         parkcollectionView.backgroundColor = UIColor.white
+
     }
-    
     func setUpConstriants(){
         //view constriants setup
         
         NSLayoutConstraint.activate([
-            
-            
             parkcollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5),
             parkcollectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             parkcollectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
@@ -71,10 +65,10 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       
+        // segue to selected states
         let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc : selectedStateViewController = storyboard.instantiateViewController(withIdentifier: "selectedStateViewController") as! selectedStateViewController
-        vc.state = Array(statecode)[indexPath.row].key
+        vc.state = Array(statecode)[indexPath.row].key // save selected state string in view controller
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.modalPresentationStyle = .fullScreen
                    
@@ -88,16 +82,13 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: parkcollectionViewIdentifier, for: indexPath) as! parkcardCollectionViewCell
         cell.state.text = Array(statecode)[indexPath.row].key
         cell.locationDetail.text = Array(statecode)[indexPath.row].value
-        
         return cell
     }
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
        let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
        return CGSize(width: itemSize, height: itemSize)
      }
-//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-//           <#code#>
-//       }
+
 
 }
 

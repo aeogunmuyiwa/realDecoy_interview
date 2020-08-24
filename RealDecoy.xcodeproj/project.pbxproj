@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C892602D84FE16FE1C2852F /* Pods_RealDecoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C4360B989D4AD9521FB63 /* Pods_RealDecoy.framework */; };
+		B22BBF5224F40BC6002FF4A6 /* detailViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22BBF5124F40BC6002FF4A6 /* detailViewCustomCell.swift */; };
 		B2754E0A24EE905900FDD971 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0924EE905900FDD971 /* AppDelegate.swift */; };
 		B2754E0C24EE905900FDD971 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0B24EE905900FDD971 /* SceneDelegate.swift */; };
 		B2754E0E24EE905900FDD971 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2754E0D24EE905900FDD971 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0C7415BDF7EC7B8A32134091 /* Pods-RealDecoy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealDecoy.release.xcconfig"; path = "Target Support Files/Pods-RealDecoy/Pods-RealDecoy.release.xcconfig"; sourceTree = "<group>"; };
+		B22BBF5124F40BC6002FF4A6 /* detailViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewCustomCell.swift; sourceTree = "<group>"; };
 		B2754E0624EE905900FDD971 /* RealDecoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealDecoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2754E0924EE905900FDD971 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2754E0B24EE905900FDD971 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				B2754E2824EEBD5000FDD971 /* customLayout.swift */,
 				B2754E2A24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.swift */,
 				B2754E2B24EEC3C800FDD971 /* ParkSelectedCollectionViewCell.xib */,
+				B22BBF5124F40BC6002FF4A6 /* detailViewCustomCell.swift */,
 			);
 			path = customCells;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				B2754E2624EEAE8600FDD971 /* parkcardCollectionViewCell.swift in Sources */,
 				B2754E0E24EE905900FDD971 /* ViewController.swift in Sources */,
+				B22BBF5224F40BC6002FF4A6 /* detailViewCustomCell.swift in Sources */,
 				B2754E3324EF6BE900FDD971 /* SelectedParkViewController.swift in Sources */,
 				B2754E2224EE923800FDD971 /* ParkServices.swift in Sources */,
 				B2754E2924EEBD5000FDD971 /* customLayout.swift in Sources */,
