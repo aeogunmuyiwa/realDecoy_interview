@@ -23,12 +23,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDT-Qg-55N">
+                        <rect key="frame" x="65" y="92" width="250" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="385" height="133"/>
             <connections>
-                <outlet property="location" destination="laU-Ut-g39" id="tiZ-2Y-hhY"/>
+                <outlet property="locationDetail" destination="ZDT-Qg-55N" id="lBJ-Ny-b5S"/>
+                <outlet property="state" destination="laU-Ut-g39" id="tiZ-2Y-hhY"/>
             </connections>
             <point key="canvasLocation" x="329.71014492753625" y="165.73660714285714"/>
         </collectionViewCell>

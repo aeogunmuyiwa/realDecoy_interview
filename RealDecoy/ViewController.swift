@@ -14,7 +14,8 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
     
     
 
-    @IBOutlet weak var searchBar: UISearchBar!
+   
+    
     let parkcollectionViewIdentifier = "parks"
     let layout = CustomLayout()
     
@@ -55,14 +56,11 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
     
     func setUpConstriants(){
         //view constriants setup
-        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            searchBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
-            searchBar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
-            searchBar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
-            searchBar.heightAnchor.constraint(equalToConstant: 30),
             
-            parkcollectionView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 5),
+            
+            parkcollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: 5),
             parkcollectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10),
             parkcollectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10),
             parkcollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
@@ -88,7 +86,9 @@ class ViewController: UIViewController ,UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: parkcollectionViewIdentifier, for: indexPath) as! parkcardCollectionViewCell
-        cell.location.text = Array(statecode)[indexPath.row].key
+        cell.state.text = Array(statecode)[indexPath.row].key
+        cell.locationDetail.text = Array(statecode)[indexPath.row].value
+        
         return cell
     }
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

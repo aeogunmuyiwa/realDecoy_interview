@@ -11,12 +11,14 @@ import Kingfisher
 
 class selectedStateViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     var activityView = UIActivityIndicatorView(style: .large)
-    @IBOutlet weak var searchbar: UISearchBar!
+
+    @IBOutlet weak var navIteam: UINavigationItem!
     @IBOutlet weak var collectionView: UICollectionView!
     var state : String!
     let layout = CustomLayout()
     var selectedParkData : Activities!
     var count = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,7 @@ class selectedStateViewController: UIViewController , UICollectionViewDataSource
         self.activityView.startAnimating()
         configuration()
         setUpConstriants()
+        self.navIteam.title = state
         
         // Do any additional setup after loading the view.
     }
@@ -41,6 +44,7 @@ class selectedStateViewController: UIViewController , UICollectionViewDataSource
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.activityView.stopAnimating()
+                
             }
             
         })
@@ -70,15 +74,12 @@ class selectedStateViewController: UIViewController , UICollectionViewDataSource
     
     func setUpConstriants(){
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        searchbar.translatesAutoresizingMaskIntoConstraints = false
+   
         print(navigationController!.navigationBar.frame.height)
         NSLayoutConstraint.activate([
-            searchbar.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor, constant: 0),
-            searchbar.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
-            searchbar.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
-            searchbar.heightAnchor.constraint(equalToConstant: 30),
+        
             
-            collectionView.topAnchor.constraint(equalTo: searchbar.bottomAnchor, constant: 5),
+            collectionView.topAnchor.constraint(equalTo:  view.layoutMarginsGuide.topAnchor, constant: 5),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
